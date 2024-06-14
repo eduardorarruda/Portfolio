@@ -1,0 +1,157 @@
+:root {
+  --azul-escuro: #353641;
+  --cinza-claro: #caccc3;
+  --cinza-medio: #d7d9d2;
+  --cinza-claro-2: #e5e6e1;
+  --branco: #f2f2f0;
+  --preto: #000000;
+}
+
+body {
+  background-color: var(--branco);
+  color: var(--preto);
+  font-family: "Roboto", sans-serif;
+}
+
+.inicio {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 11rem;
+  font-size: 1.5rem;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin: 0.5rem;
+  color: var(--preto);
+}
+
+.inicio > strong {
+  color: var(--preto);
+}
+
+.butonInicio {
+  color: var(--preto);
+  border: solid var(--azul-escuro);
+  border-radius: 10px;
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.butonInicio img {
+  width: 2rem;
+  filter: invert(0);
+}
+
+.butonInicio span {
+  font-size: 1.5rem;
+}
+
+.quemSou {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.quemSou .sobreMimBtn {
+  width: auto;
+}
+
+.meio {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.meio > img {
+  width: 15rem;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.meio > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meio > ul > li {
+  margin: 0.5rem;
+  color: var(--preto);
+}
+
+.githubLinkedinBtn {
+  display: flex;
+  gap: 2rem;
+}
+
+.githubLinkedinBtn a {
+  color: var(--preto);
+  text-decoration: none;
+}
+
+.projetos .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.projetos .col-md-4 {
+  flex: 0 0 calc(33.3333% - 1rem);
+  max-width: calc(33.3333% - 1rem);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.projetos .card {
+  color: var(--preto);
+  border: 4px solid var(--azul-escuro);
+  height: 100%;
+}
+
+.projetos .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projetos .card-title {
+  color: var(--preto);
+}
+
+.projetos .card-img-top {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.tituloProjetos {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--azul-escuro);
+}
+
+@media (max-width: 992px) {
+  .projetos .col-md-4 {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .projetos .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
