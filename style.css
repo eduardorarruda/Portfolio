@@ -125,6 +125,17 @@ body {
   justify-content: space-between;
 }
 
+.linguagens {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.img-ling {
+  width: 30px;
+  height: 30px;
+}
+
 .projetos .card-title {
   color: var(--preto);
 }
