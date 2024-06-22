@@ -163,8 +163,13 @@ body {
   border-radius: 10px;
 }
 .img-reduzida {
-  width: 50px; /* Defina o tamanho que você achar adequado */
+  width: 50px;
   height: auto;
+}
+.linha {
+  width: 110%;
+  align-items: left;
+  border: 1px solid var(--preto);
 }
 
 @media (max-width: 992px) {
